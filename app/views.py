@@ -6,7 +6,7 @@ from flask import render_template
 # add index route
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("public/index.html")
 
 # add about route
 @app.route("/about")
