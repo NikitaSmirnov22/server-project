@@ -1,11 +1,12 @@
 
 # import library
 from app import app
+from flask import render_template
 
 # add index route
 @app.route("/")
 def index():
-    return "Hello world!"
+    return render_template("index.html")
 
 # add about route
 @app.route("/about")
